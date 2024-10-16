@@ -1,0 +1,12 @@
+{
+	"reporter": "mochawesome",
+	"reporterOptions": {
+	  "reportDir": "reports",  
+	  "reportFilename": "test-report",  
+	  "reportTitle": "API Automation Test Report",  
+	  "inlineAssets": true,  
+	  "timestamp": "yyyy-mm-dd HH:MM:ss"  
+	},
+	"timeout": 5000  
+  }
+  

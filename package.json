@@ -1,0 +1,21 @@
+{
+  "name": "qa.automationexercise-api.pactumjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha ./tests/integration/**/*.js --reporter mochawesome"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.0.3",
+    "joi": "^17.13.3",
+    "pactum": "^3.7.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.3",
+    "mochawesome": "^7.1.3"
+  }
+}

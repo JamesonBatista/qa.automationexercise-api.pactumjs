@@ -1,0 +1,40 @@
+name: Run Tests and Generate Report
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Verificar o código do repositório
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Configurar o Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'  
+
+      
+      - name: Install dependencies
+        run: npm install
+
+      
+      - name: Run Tests
+        run: npm test
+
+      
+      - name: Upload Mochawesome Report
+        if: always()  
+        uses: actions/upload-artifact@v3
+        with:
+          name: mochawesome-report
+          path: reports/mochawesome-report.html  
