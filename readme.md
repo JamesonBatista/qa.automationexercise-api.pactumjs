@@ -12,7 +12,7 @@ Para rodar o projeto localmente, você precisará ter as seguintes dependências
 
 1. Clone o repositório para sua máquina local:
    ```bash
-   git clone https://github.com/seu-repositorio.git
+   git clone https://github.com/JamesonBatista/qa.automationexercise-api.pactumjs.git
    ```
 
 2. Acesse o diretório do projeto:
